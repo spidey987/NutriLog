@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Quantity</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div class="logo">Nutrilog</div>
+        <div class="nav-item-group">
+            <!-- <div class="nav-item" onclick="selectItem(event)" id='1'>Calorie Count</div> -->
+            <div class="nav-item nav-item-selected">Calorie Counter</div>
+            <div class="nav-item " onclick="selectItem(event)" id='2'>Set Goals</div>
+            <div class="nav-item" onclick="selectItem(event)" id='3'>Recipe</div>
+            <div class="profile">
+                <img src="../images/S36rZFTzLVmATYzXAAiu5_cg9bU00.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="card">
+            <div class="image-side">
+                <img src="./images/eaters-collective-6rtm6a_aVyE-unsplash.jpg" alt="pizza">
+                <div class="bottomleft">Egg Omelette</div>
+            </div>
+            <div class="pick-quantity">Pick the quantity</div>
+            <div class="pre-quantity">0.75</div>
+            <div class="quantity">1</div>
+            <div class="next-quantity">1.5</div>
+            <div class="measurement">Omelette</div>
+            <div class="next-measurement">grams</div>
+            <div class="nutritional-text">Nutritional Information</div>
+            <div class="values-group">
+                <div class="values">
+                    <div>Proteins</div>
+                    <div class="red-circle "><img class="icon" src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDc0IDc0IiB3aWR0aD0iNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGlkPSJJY29ucyI+PHBhdGggZD0ibTY3LjEyOSA3MS45OTNoLTYwLjI1OGE0Ljg3OCA0Ljg3OCAwIDAgMSAtNC44NzEtNC44NzJ2LTI0LjEyMWExIDEgMCAwIDEgMS0xIDUgNSAwIDAgMCAwLTEwIDEgMSAwIDAgMSAtMS0xdi0yNC4xMjFhNC44NzggNC44NzggMCAwIDEgNC44NzEtNC44NzJoMjIuNTg4YTEgMSAwIDAgMSAxIC45MzEgMy45MjUgMy45MjUgMCAwIDAgNy44MzIgMCAxIDEgMCAwIDEgMS0uOTMxaDI3LjgzOGE0Ljg3OCA0Ljg3OCAwIDAgMSA0Ljg3MSA0Ljg3MnYzNi42ODdhMSAxIDAgMCAxIC0xLjExNy45OTQgNS4yNzYgNS4yNzYgMCAxIDAgLS42NDMgMTAuNTEzIDUuNTMyIDUuNTMyIDAgMCAwIC42NDMtLjAzNyAxIDEgMCAwIDEgMS4xMTcuOTkzdjExLjA5MmE0Ljg3OCA0Ljg3OCAwIDAgMSAtNC44NzEgNC44NzJ6bS02My4xMjktMjguMDY0djIzLjE5MmEyLjg3NSAyLjg3NSAwIDAgMCAyLjg3MSAyLjg3Mmg2MC4yNThhMi44NzUgMi44NzUgMCAwIDAgMi44NzEtMi44NzJ2LTEwLjA1MmE3LjI3NiA3LjI3NiAwIDAgMSAwLTE0LjU0NHYtMzUuNjQ2YTIuODc1IDIuODc1IDAgMCAwIC0yLjg3MS0yLjg3MmgtMjYuOTg1YTUuOTI1IDUuOTI1IDAgMCAxIC0xMS41NDMgMGgtMjEuNzNhMi44NzUgMi44NzUgMCAwIDAgLTIuODcxIDIuODcydjIzLjE5MmE3IDcgMCAwIDEgMCAxMy44NTh6Ii8+PHBhdGggZD0ibTIyLjk3NiAyNi4yNzRhNSA1IDAgMSAxIDUtNSA1LjAwNiA1LjAwNiAwIDAgMSAtNSA1em0wLThhMyAzIDAgMSAwIDMgMyAzIDMgMCAwIDAgLTMtMy4wMDN6Ii8+PHBhdGggZD0ibTUwLjg5MSA1OC4yNTNhNSA1IDAgMSAxIDUtNSA1LjAwOCA1LjAwOCAwIDAgMSAtNSA1em0wLThhMyAzIDAgMSAwIDMgMyAzIDMgMCAwIDAgLTMtMy4wMDN6Ii8+PHBhdGggZD0ibTM3IDQxLjI1M2EzLjUgMy41IDAgMSAxIDMuNS0zLjUgMy41MDYgMy41MDYgMCAwIDEgLTMuNSAzLjV6bTAtNWExLjUgMS41IDAgMSAwIDEuNSAxLjUgMS41IDEuNSAwIDAgMCAtMS41LTEuNTAzeiIvPjxwYXRoIGQ9Im0yMS44NTkgNjIuNzA3YTUgNSAwIDEgMSA1LTUgNS4wMDggNS4wMDggMCAwIDEgLTUgNXptMC04YTMgMyAwIDEgMCAzIDMgMy4wMDYgMy4wMDYgMCAwIDAgLTMtMy4wMDd6Ii8+PHBhdGggZD0ibTUyLjk3NiAyMS44ODVhNC42MTQgNC42MTQgMCAxIDEgNC42MTMtNC42MTQgNC42MiA0LjYyIDAgMCAxIC00LjYxMyA0LjYxNHptMC03LjIyN2EyLjYxNCAyLjYxNCAwIDEgMCAyLjYxMyAyLjYxMyAyLjYxNyAyLjYxNyAwIDAgMCAtMi42MTMtMi42MTN6Ii8+PC9nPjwvc3ZnPg==" /></div>
+                    <div>6.0g</div>
+                </div>
+                <div class="values">
+                    <div>Carbs</div>
+                    <div class="green-circle"></div>
+                    <div>2.5g</div>
+                </div>
+                <div class="values">
+                    <div>Fats</div>
+                    <div class="orange-circle"></div>
+                    <div>8.1g</div>
+                </div>
+                <div class="values">
+                    <div>Fiber</div>
+                    <div class="pink-circle"></div>
+                    <div>0.04g</div>
+                </div>
+            </div>
+            <div class="add">ADD</div>
+        </div>
+    </main>
+</body>
+
+</html>

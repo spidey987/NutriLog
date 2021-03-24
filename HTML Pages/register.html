@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <title>Sign up</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <style>
+        body,
+        input {
+            font-family: "Poppins", sans-serif;
+            background-color: rgb(208, 166, 248);
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(210, 173, 245);">
+
+    <div class="container">
+        <div class="left-side">
+            <div class="login-image">
+                <div class="login-heading">Welcome to the community</div>
+            </div>
+        </div>
+        <div class="forms-container">
+            <div class="signin-signup">
+                <form action="/register" class="sign-up-form" id="signup" method="POST">
+
+                    <h2 class="title">Sign up</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username" name="username" id="username" />
+                        <small></small>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email" name="email" id="email"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
+                        <small></small>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" name="password" id="password" />
+                        <small></small>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Confirm Password" name="cpassword" id="cpassword" />
+                        <small></small>
+                    </div>
+                    <input type="submit" class="btn" value="Sign up" id="signup1" name="signup1" />
+                    <p class="social-text">Or Sign up with social platform</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--<script>
+        const sign_in_btn = document.querySelector("#sign-in-btn");
+        const sign_up_btn = document.querySelector("#sign-up-btn");
+        const container = document.querySelector(".container");
+
+        sign_up_btn.addEventListener("click", () => {
+            container.classList.add("sign-up-mode");
+        });
+
+        sign_in_btn.addEventListener("click", () => {
+            container.classList.remove("sign-up-mode");
+        });
+
+    </script>-->
+
+
+</body>
+
+</html>
