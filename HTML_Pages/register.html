@@ -2,35 +2,44 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <title>Sign up</title>
     <link rel="stylesheet" href="../css/index.css">
-    <title>Sign in</title>
     <style>
         body,
         input {
             font-family: "Poppins", sans-serif;
-            background-color: rgb(208, 166, 248);
+
         }
     </style>
-
 </head>
 
 <body>
+
     <div class="container">
         <div class="left-side">
             <div class="login-image">
                 <div class="login-heading">Welcome to the community</div>
             </div>
         </div>
-        <div class="forms-container">
+        <div class="right-side">
             <div class="signin-signup">
                 <form action="/login" class="sign-in-form" method="POST">
                     <h2 class="title">Sign in</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
                         <input type="email" placeholder="Email" name="emailid" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" name="password1" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" name="password1" required />
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
@@ -63,6 +72,8 @@
         });
 
     </script>-->
+
+
 </body>
 
 </html>
